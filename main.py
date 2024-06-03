@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from todo import todo_router
 import uvicorn
 app=FastAPI()
-origins=["http://50.19.226.105", "http://50.19.226.105","http://50.19.226.105:8000"]
+origins=["http://50.19.226.105:5501", "http://50.19.226.105"]
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
